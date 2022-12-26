@@ -156,8 +156,10 @@ Network|COCO mAP(0.5)|Resolution|Run Time(4xCore)|Run Time(1xCore)|FLOPs(G)|Para
 ## NCNN
 * Convert onnx
   ```
-  python pytorch2onnx1.py --data data/my.data --weights weights/my-299-epoch-1.000000ap-model.pth --output JBoxafter.onnx
+  python pytorch2onnx.py --data data/my.data --weights weights/my-299-epoch-1.000000ap-model.pth --output JBoxafter.onnx
   ```
+* onnx测试
+python yolo_fastestv2.py  里面需要修改路径
 * onnx-sim
   ```
   python3 -m onnxsim yolo-fastestv2.onnx yolo-fastestv2-opt.onnx
@@ -200,9 +202,9 @@ Network|COCO mAP(0.5)|Resolution|Run Time(4xCore)|Run Time(1xCore)|FLOPs(G)|Para
 
 # 数据集准备
 # filename.py脚本
-
+代码里面有注释
 # findfile.py脚本
-
+代码里面有注释
 
 # 扩充数据集
 yolotoxml.py是将yolo数据集转换为xml; voctoyol.py是将xml数据集转换为yolo
