@@ -25,7 +25,7 @@ Network|COCO mAP(0.5)|Resolution|Run Time(4xCore)|Run Time(1xCore)|FLOPs(G)|Para
   ```
   pip3 install -r requirements.txt
   ```
-## Test
+## pth模型测试Test
 * Picture test
   ```
   python test.py --data data/my.data --weights weights/my-299-epoch-1.000000ap-model.pth --imgpath ./img
@@ -158,8 +158,10 @@ Network|COCO mAP(0.5)|Resolution|Run Time(4xCore)|Run Time(1xCore)|FLOPs(G)|Para
   ```
   python pytorch2onnx.py --data data/my.data --weights weights/my-299-epoch-1.000000ap-model.pth --output JBoxafter.onnx
   ```
-* onnx测试
+* onnx模型测试
+```
 python yolo_fastestv2.py  里面需要修改路径
+```
 * onnx-sim
   ```
   python3 -m onnxsim yolo-fastestv2.onnx yolo-fastestv2-opt.onnx
