@@ -1,3 +1,6 @@
+###########该仓库在原仓库dog-qiuqiu/FastestDet的基础上整合了pth模型转化为onnx模型的代码，增加了数据扩充（DataAugmentforLabelImg.py）的代码，增加了train和val的分配代码（filename.py），增加了onnx模型测试代码（yolo_fastestv2.py）
+
+
 # ***FastestDet: it has higher accuracy and faster speed than Yolo-fastest https://github.com/dog-qiuqiu/FastestDet***
 # :zap:Yolo-FastestV2:zap:[![DOI](https://zenodo.org/badge/386585431.svg)](https://zenodo.org/badge/latestdoi/386585431)
 ![image](https://github.com/dog-qiuqiu/Yolo-FastestV2/blob/main/img/demo.png)
